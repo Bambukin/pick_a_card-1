@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative 'card'
 class Deck
   def initialize
@@ -11,7 +12,7 @@ class Deck
     end
 
     2.times do
-      @cards << Card.new(nil, nil, true )
+      @cards << Card.new(nil, nil, joker: true)
     end
   end
 
